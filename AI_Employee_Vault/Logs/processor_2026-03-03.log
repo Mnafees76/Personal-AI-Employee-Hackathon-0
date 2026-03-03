@@ -1,260 +1,189 @@
-2026-03-03 09:46:38,439 - INFO - ============================================================
-2026-03-03 09:46:38,439 - INFO - AI Employee Task Processor
-2026-03-03 09:46:38,439 - INFO - ============================================================
-2026-03-03 09:46:38,440 - INFO - Processing task: test_file.md
-2026-03-03 09:46:38,441 - INFO - Parsed task: test_file
-2026-03-03 09:46:38,442 - INFO - Plan created: Plan_20260303_094638_test_file.md
-2026-03-03 09:46:38,442 - INFO - Task processed successfully: test_file
-2026-03-03 09:46:38,443 - INFO - Task moved to Done: Done_20260303_094638_test_file.md
-2026-03-03 09:46:38,445 - INFO - Plan moved to Done: Done_20260303_094638_Plan_20260303_094638_test_file.md
-2026-03-03 09:46:38,447 - INFO - Updating Dashboard.md...
-2026-03-03 09:46:38,469 - INFO - Dashboard.md updated successfully
-2026-03-03 09:46:38,717 - INFO - ============================================================
-2026-03-03 09:46:38,717 - INFO - AI Employee Task Processor
-2026-03-03 09:46:38,717 - INFO - ============================================================
-2026-03-03 09:46:38,717 - ERROR - File not found: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\test_file.md
-2026-03-03 09:55:31,771 - INFO - ============================================================
-2026-03-03 09:55:31,771 - INFO - AI Employee Task Processor
-2026-03-03 09:55:31,771 - INFO - ============================================================
-2026-03-03 09:55:31,771 - INFO - --------------------------------------------------
-2026-03-03 09:55:31,771 - INFO - Processing task: test_file.md
-2026-03-03 09:55:31,772 - INFO - Source: Inbox
-2026-03-03 09:55:31,773 - INFO - Parsed task: Test Task
-2026-03-03 09:55:31,774 - INFO - Plan created: Plan_20260303_095531_test_file.md
-2026-03-03 09:55:31,776 - INFO - Task processed successfully: Test Task
-2026-03-03 09:55:31,777 - INFO - Task moved to Done: Done_20260303_095531_test_file.md
-2026-03-03 09:55:31,779 - INFO - Plan moved to Done: Done_20260303_095531_Plan_20260303_095531_test_file.md
-2026-03-03 09:55:31,781 - INFO - ==================================================
-2026-03-03 09:55:31,781 - INFO - SUCCESS: test_file.md processed and moved to Done/
-2026-03-03 09:55:31,781 - INFO - ==================================================
-2026-03-03 09:55:31,781 - INFO - Updating Dashboard.md...
-2026-03-03 09:55:31,800 - INFO - Dashboard.md updated successfully
-2026-03-03 09:55:55,188 - INFO - ============================================================
-2026-03-03 09:55:55,193 - INFO - AI Employee Task Processor
-2026-03-03 09:55:55,193 - INFO - ============================================================
-2026-03-03 09:55:55,194 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 09:55:55,195 - INFO - Processed 0 task(s)
-2026-03-03 09:55:55,195 - INFO - Checking Inbox folder...
-2026-03-03 09:55:55,196 - INFO - Total processed: 0 task(s)
-2026-03-03 09:55:55,196 - INFO - Updating Dashboard.md...
-2026-03-03 09:55:55,202 - INFO - Dashboard.md updated successfully
-2026-03-03 09:55:55,202 - INFO - Processing complete.
-2026-03-03 09:56:23,992 - INFO - ============================================================
-2026-03-03 09:56:23,993 - INFO - AI Employee Task Processor
-2026-03-03 09:56:23,993 - INFO - ============================================================
-2026-03-03 09:56:23,993 - ERROR - File not found: Inbox\test_file.md
-2026-03-03 09:56:28,868 - INFO - ============================================================
-2026-03-03 09:56:28,868 - INFO - AI Employee Task Processor
-2026-03-03 09:56:28,868 - INFO - ============================================================
-2026-03-03 09:56:28,868 - ERROR - File not found: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\test_file.md
-2026-03-03 09:56:48,663 - INFO - ============================================================
-2026-03-03 09:56:48,663 - INFO - AI Employee Task Processor
-2026-03-03 09:56:48,664 - INFO - ============================================================
-2026-03-03 09:56:48,665 - INFO - --------------------------------------------------
-2026-03-03 09:56:48,665 - INFO - Processing task: test_file.md
-2026-03-03 09:56:48,665 - INFO - Source: Inbox
-2026-03-03 09:56:48,666 - INFO - Parsed task: Test Task
-2026-03-03 09:56:48,667 - INFO - Plan created: Plan_20260303_095648_test_file.md
-2026-03-03 09:56:48,668 - INFO - Task processed successfully: Test Task
-2026-03-03 09:56:48,669 - INFO - Task moved to Done: Done_20260303_095648_test_file.md
-2026-03-03 09:56:48,670 - INFO - Plan moved to Done: Done_20260303_095648_Plan_20260303_095648_test_file.md
-2026-03-03 09:56:48,672 - INFO - ==================================================
-2026-03-03 09:56:48,672 - INFO - SUCCESS: test_file.md processed and moved to Done/
-2026-03-03 09:56:48,673 - INFO - ==================================================
-2026-03-03 09:56:48,673 - INFO - Updating Dashboard.md...
-2026-03-03 09:56:48,689 - INFO - Dashboard.md updated successfully
-2026-03-03 09:56:52,294 - INFO - ============================================================
-2026-03-03 09:56:52,294 - INFO - AI Employee Task Processor
-2026-03-03 09:56:52,294 - INFO - ============================================================
-2026-03-03 09:56:52,294 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 09:56:52,295 - INFO - Processed 0 task(s)
-2026-03-03 09:56:52,295 - INFO - Checking Inbox folder...
-2026-03-03 09:56:52,295 - INFO - Total processed: 0 task(s)
-2026-03-03 09:56:52,295 - INFO - Updating Dashboard.md...
-2026-03-03 09:56:52,299 - INFO - Dashboard.md updated successfully
-2026-03-03 09:56:52,300 - INFO - Processing complete.
-2026-03-03 09:57:25,824 - INFO - ============================================================
-2026-03-03 09:57:25,824 - INFO - AI Employee Task Processor
-2026-03-03 09:57:25,824 - INFO - ============================================================
-2026-03-03 09:57:25,824 - INFO - --------------------------------------------------
-2026-03-03 09:57:25,825 - INFO - Processing task: test_file.md
-2026-03-03 09:57:25,825 - INFO - Source: Inbox
-2026-03-03 09:57:25,834 - INFO - SKIP: File already processed: test_file.md
-2026-03-03 09:57:25,834 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 09:57:30,060 - INFO - ============================================================
-2026-03-03 09:57:30,061 - INFO - AI Employee Task Processor
-2026-03-03 09:57:30,061 - INFO - ============================================================
-2026-03-03 09:57:30,061 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 09:57:30,062 - INFO - Processed 0 task(s)
-2026-03-03 09:57:30,062 - INFO - Checking Inbox folder...
-2026-03-03 09:57:30,063 - INFO - --------------------------------------------------
-2026-03-03 09:57:30,063 - INFO - Processing task: test_file.md
-2026-03-03 09:57:30,063 - INFO - Source: Inbox
-2026-03-03 09:57:30,063 - INFO - SKIP: File already processed: test_file.md
-2026-03-03 09:57:30,063 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 09:57:30,063 - INFO - Total processed: 1 task(s)
-2026-03-03 09:57:30,063 - INFO - Updating Dashboard.md...
-2026-03-03 09:57:30,074 - INFO - Dashboard.md updated successfully
-2026-03-03 09:57:30,074 - INFO - Processing complete.
-2026-03-03 09:57:50,631 - INFO - ============================================================
-2026-03-03 09:57:50,631 - INFO - AI Employee Task Processor
-2026-03-03 09:57:50,631 - INFO - ============================================================
-2026-03-03 09:57:50,631 - INFO - --------------------------------------------------
-2026-03-03 09:57:50,631 - INFO - Processing task: test_file.md
-2026-03-03 09:57:50,631 - INFO - Source: Inbox
-2026-03-03 09:57:50,632 - INFO - Parsed task: Final Test - Complete Workflow
-2026-03-03 09:57:50,633 - INFO - Plan created: Plan_20260303_095750_test_file.md
-2026-03-03 09:57:50,633 - INFO - Task processed successfully: Final Test - Complete Workflow
-2026-03-03 09:57:50,635 - INFO - Task moved to Done: Done_20260303_095750_test_file.md
-2026-03-03 09:57:50,636 - INFO - Plan moved to Done: Done_20260303_095750_Plan_20260303_095750_test_file.md
-2026-03-03 09:57:50,638 - INFO - ==================================================
-2026-03-03 09:57:50,638 - INFO - SUCCESS: test_file.md processed and moved to Done/
-2026-03-03 09:57:50,638 - INFO - ==================================================
-2026-03-03 09:57:50,638 - INFO - Updating Dashboard.md...
-2026-03-03 09:57:50,658 - INFO - Dashboard.md updated successfully
-2026-03-03 09:57:50,824 - INFO - ============================================================
-2026-03-03 09:57:50,825 - INFO - AI Employee Task Processor
-2026-03-03 09:57:50,825 - INFO - ============================================================
-2026-03-03 09:57:50,825 - ERROR - File not found: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\test_file.md
-2026-03-03 09:57:55,237 - INFO - ============================================================
-2026-03-03 09:57:55,237 - INFO - AI Employee Task Processor
-2026-03-03 09:57:55,237 - INFO - ============================================================
-2026-03-03 09:57:55,237 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 09:57:55,237 - INFO - Processed 0 task(s)
-2026-03-03 09:57:55,238 - INFO - Checking Inbox folder...
-2026-03-03 09:57:55,238 - INFO - Total processed: 0 task(s)
-2026-03-03 09:57:55,238 - INFO - Updating Dashboard.md...
-2026-03-03 09:57:55,253 - INFO - Dashboard.md updated successfully
-2026-03-03 09:57:55,253 - INFO - Processing complete.
-2026-03-03 09:59:39,596 - INFO - ============================================================
-2026-03-03 09:59:39,596 - INFO - AI Employee Task Processor
-2026-03-03 09:59:39,596 - INFO - ============================================================
-2026-03-03 09:59:39,597 - INFO - --------------------------------------------------
-2026-03-03 09:59:39,597 - INFO - Processing task: test_file.md
-2026-03-03 09:59:39,598 - INFO - Source: Inbox
-2026-03-03 09:59:39,601 - INFO - Parsed task: Final Verification Test
-2026-03-03 09:59:39,610 - INFO - Plan created: Plan_20260303_095939_test_file.md
-2026-03-03 09:59:39,611 - INFO - Task processed successfully: Final Verification Test
-2026-03-03 09:59:39,620 - INFO - Task moved to Done: Done_20260303_095939_test_file.md
-2026-03-03 09:59:39,622 - INFO - Plan moved to Done: Done_20260303_095939_Plan_20260303_095939_test_file.md
-2026-03-03 09:59:39,624 - INFO - ==================================================
-2026-03-03 09:59:39,624 - INFO - SUCCESS: test_file.md processed and moved to Done/
-2026-03-03 09:59:39,624 - INFO - ==================================================
-2026-03-03 09:59:39,624 - INFO - Updating Dashboard.md...
-2026-03-03 09:59:39,645 - INFO - Dashboard.md updated successfully
-2026-03-03 09:59:45,031 - INFO - ============================================================
-2026-03-03 09:59:45,031 - INFO - AI Employee Task Processor
-2026-03-03 09:59:45,031 - INFO - ============================================================
-2026-03-03 09:59:45,031 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 09:59:45,032 - INFO - Processed 0 task(s)
-2026-03-03 09:59:45,032 - INFO - Checking Inbox folder...
-2026-03-03 09:59:45,032 - INFO - Total processed: 0 task(s)
-2026-03-03 09:59:45,032 - INFO - Updating Dashboard.md...
-2026-03-03 09:59:45,035 - INFO - Dashboard.md updated successfully
-2026-03-03 09:59:45,036 - INFO - Processing complete.
-2026-03-03 10:00:48,917 - INFO - ============================================================
-2026-03-03 10:00:48,918 - INFO - AI Employee Task Processor
-2026-03-03 10:00:48,918 - INFO - ============================================================
-2026-03-03 10:00:48,918 - INFO - --------------------------------------------------
-2026-03-03 10:00:48,918 - INFO - Processing task: test_file.md
-2026-03-03 10:00:48,919 - INFO - Source: Inbox
-2026-03-03 10:00:48,922 - INFO - Parsed task: Clean Dashboard Test
-2026-03-03 10:00:48,923 - INFO - Plan created: Plan_20260303_100048_test_file.md
-2026-03-03 10:00:48,924 - INFO - Task processed successfully: Clean Dashboard Test
-2026-03-03 10:00:48,929 - INFO - Task moved to Done: Done_20260303_100048_test_file.md
-2026-03-03 10:00:48,930 - INFO - Plan moved to Done: Done_20260303_100048_Plan_20260303_100048_test_file.md
-2026-03-03 10:00:48,932 - INFO - ==================================================
-2026-03-03 10:00:48,932 - INFO - SUCCESS: test_file.md processed and moved to Done/
-2026-03-03 10:00:48,932 - INFO - ==================================================
-2026-03-03 10:00:48,932 - INFO - Updating Dashboard.md...
-2026-03-03 10:00:48,959 - INFO - Dashboard.md updated successfully
-2026-03-03 10:00:52,248 - INFO - ============================================================
-2026-03-03 10:00:52,248 - INFO - AI Employee Task Processor
-2026-03-03 10:00:52,248 - INFO - ============================================================
-2026-03-03 10:00:52,248 - INFO - No file specified. Processing all files in Needs_Action folder...
-2026-03-03 10:00:52,249 - INFO - Processed 0 task(s)
-2026-03-03 10:00:52,249 - INFO - Checking Inbox folder...
-2026-03-03 10:00:52,249 - INFO - Total processed: 0 task(s)
-2026-03-03 10:00:52,249 - INFO - Updating Dashboard.md...
-2026-03-03 10:00:52,253 - INFO - Dashboard.md updated successfully
-2026-03-03 10:00:52,253 - INFO - Processing complete.
-2026-03-03 10:08:49,298 - INFO - ============================================================
-2026-03-03 10:08:49,298 - INFO - AI Employee Task Processor
-2026-03-03 10:08:49,298 - INFO - ============================================================
-2026-03-03 10:08:49,299 - INFO - --------------------------------------------------
-2026-03-03 10:08:49,299 - INFO - Processing task: conten.md
-2026-03-03 10:08:49,299 - INFO - Source: Inbox
-2026-03-03 10:08:49,302 - INFO - Parsed task: conten
-2026-03-03 10:08:49,303 - INFO - Plan created: Plan_20260303_100849_conten.md
-2026-03-03 10:08:49,304 - INFO - Task processed successfully: conten
-2026-03-03 10:08:49,306 - INFO - Task moved to Done: Done_20260303_100849_conten.md
-2026-03-03 10:08:49,308 - INFO - Plan moved to Done: Done_20260303_100849_Plan_20260303_100849_conten.md
-2026-03-03 10:08:49,309 - INFO - ==================================================
-2026-03-03 10:08:49,310 - INFO - SUCCESS: conten.md processed and moved to Done/
-2026-03-03 10:08:49,310 - INFO - ==================================================
-2026-03-03 10:08:49,310 - INFO - Updating Dashboard.md...
-2026-03-03 10:08:49,338 - INFO - Dashboard.md updated successfully
-2026-03-03 10:11:45,126 - INFO - ============================================================
-2026-03-03 10:11:45,127 - INFO - AI Employee Task Processor
-2026-03-03 10:11:45,127 - INFO - ============================================================
-2026-03-03 10:11:45,127 - INFO - --------------------------------------------------
-2026-03-03 10:11:45,127 - INFO - Processing task: conten.md
-2026-03-03 10:11:45,127 - INFO - Source: Inbox
-2026-03-03 10:11:45,144 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:11:45,144 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:11:45,264 - INFO - ============================================================
-2026-03-03 10:11:45,264 - INFO - AI Employee Task Processor
-2026-03-03 10:11:45,264 - INFO - ============================================================
-2026-03-03 10:11:45,264 - INFO - --------------------------------------------------
-2026-03-03 10:11:45,264 - INFO - Processing task: conten.md
-2026-03-03 10:11:45,265 - INFO - Source: Inbox
-2026-03-03 10:11:45,265 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:11:45,265 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:11:46,662 - INFO - ============================================================
-2026-03-03 10:11:46,663 - INFO - AI Employee Task Processor
-2026-03-03 10:11:46,663 - INFO - ============================================================
-2026-03-03 10:11:46,663 - INFO - --------------------------------------------------
-2026-03-03 10:11:46,663 - INFO - Processing task: conten.md
-2026-03-03 10:11:46,663 - INFO - Source: Inbox
-2026-03-03 10:11:46,664 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:11:46,664 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:11:46,795 - INFO - ============================================================
-2026-03-03 10:11:46,795 - INFO - AI Employee Task Processor
-2026-03-03 10:11:46,795 - INFO - ============================================================
-2026-03-03 10:11:46,795 - INFO - --------------------------------------------------
-2026-03-03 10:11:46,795 - INFO - Processing task: conten.md
-2026-03-03 10:11:46,795 - INFO - Source: Inbox
-2026-03-03 10:11:46,796 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:11:46,796 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:15:57,390 - INFO - ============================================================
-2026-03-03 10:15:57,390 - INFO - AI Employee Task Processor
-2026-03-03 10:15:57,391 - INFO - ============================================================
-2026-03-03 10:15:57,391 - INFO - --------------------------------------------------
-2026-03-03 10:15:57,392 - INFO - Processing task: conten.md
-2026-03-03 10:15:57,393 - INFO - Source: Inbox
-2026-03-03 10:15:57,394 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:15:57,394 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:15:57,564 - INFO - ============================================================
-2026-03-03 10:15:57,565 - INFO - AI Employee Task Processor
-2026-03-03 10:15:57,565 - INFO - ============================================================
-2026-03-03 10:15:57,565 - INFO - --------------------------------------------------
-2026-03-03 10:15:57,565 - INFO - Processing task: conten.md
-2026-03-03 10:15:57,565 - INFO - Source: Inbox
-2026-03-03 10:15:57,565 - INFO - SKIP: File already processed: conten.md
-2026-03-03 10:15:57,566 - INFO - To reprocess, remove the filename from Logs/processed_files.log
-2026-03-03 10:26:26,720 - INFO - ============================================================
-2026-03-03 10:26:26,721 - INFO - AI Employee Task Processor
-2026-03-03 10:26:26,721 - INFO - ============================================================
-2026-03-03 10:26:26,721 - INFO - --------------------------------------------------
-2026-03-03 10:26:26,721 - INFO - Processing task: test.md
-2026-03-03 10:26:26,721 - INFO - Source: Inbox
-2026-03-03 10:26:26,723 - INFO - Parsed task: test
-2026-03-03 10:26:26,724 - INFO - Plan created: Plan_20260303_102626_test.md
-2026-03-03 10:26:26,724 - INFO - Task processed successfully: test
-2026-03-03 10:26:26,726 - INFO - Task moved to Done: Done_20260303_102626_test.md
-2026-03-03 10:26:26,727 - INFO - Plan moved to Done: Done_20260303_102626_Plan_20260303_102626_test.md
-2026-03-03 10:26:26,728 - INFO - ==================================================
-2026-03-03 10:26:26,728 - INFO - SUCCESS: test.md processed and moved to Done/
-2026-03-03 10:26:26,728 - INFO - ==================================================
-2026-03-03 10:26:26,729 - INFO - Updating Dashboard.md...
-2026-03-03 10:26:26,752 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:34,813 - INFO - ============================================================
+2026-03-03 15:13:34,814 - INFO - AI Employee Task Processor
+2026-03-03 15:13:34,814 - INFO - ============================================================
+2026-03-03 15:13:34,814 - INFO - Checking Inbox folder...
+2026-03-03 15:13:34,814 - INFO - --------------------------------------------------
+2026-03-03 15:13:34,815 - INFO - Processing task: Test_Needs_Approval.md
+2026-03-03 15:13:34,815 - INFO - Source folder: Inbox
+2026-03-03 15:13:34,815 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\Test_Needs_Approval.md
+2026-03-03 15:13:34,827 - INFO - Parsed task: Task Requiring Human Approval
+2026-03-03 15:13:34,827 - INFO - Plan created: Plan_20260303_151334_Test_Needs_Approval.md
+2026-03-03 15:13:34,828 - INFO - Task processed successfully: Task Requiring Human Approval
+2026-03-03 15:13:34,828 - INFO - Keyword 'approval' detected - task requires human review
+2026-03-03 15:13:34,828 - INFO - Task requires human review: Test_Needs_Approval.md
+2026-03-03 15:13:34,830 - INFO - Moved to Needs_Action successfully: NeedsAction_20260303_151334_Test_Needs_Approval.md
+2026-03-03 15:13:34,830 - INFO - Plan kept in Plans folder for reference: Plan_20260303_151334_Test_Needs_Approval.md
+2026-03-03 15:13:34,832 - INFO - ==================================================
+2026-03-03 15:13:34,832 - INFO - SUCCESS: Test_Needs_Approval.md moved to Needs_Action/
+2026-03-03 15:13:34,832 - INFO - ==================================================
+2026-03-03 15:13:34,832 - INFO - Updating Dashboard.md...
+2026-03-03 15:13:34,836 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:34,837 - INFO - --------------------------------------------------
+2026-03-03 15:13:34,837 - INFO - Processing task: Test_Routine_Task.md
+2026-03-03 15:13:34,837 - INFO - Source folder: Inbox
+2026-03-03 15:13:34,838 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\Test_Routine_Task.md
+2026-03-03 15:13:34,857 - INFO - Parsed task: Routine Data Processing Task
+2026-03-03 15:13:34,859 - INFO - Plan created: Plan_20260303_151334_Test_Routine_Task.md
+2026-03-03 15:13:34,859 - INFO - Task processed successfully: Routine Data Processing Task
+2026-03-03 15:13:34,859 - INFO - Keyword 'human' detected - task requires human review
+2026-03-03 15:13:34,859 - INFO - Task requires human review: Test_Routine_Task.md
+2026-03-03 15:13:34,860 - INFO - Moved to Needs_Action successfully: NeedsAction_20260303_151334_Test_Routine_Task.md
+2026-03-03 15:13:34,861 - INFO - Plan kept in Plans folder for reference: Plan_20260303_151334_Test_Routine_Task.md
+2026-03-03 15:13:34,862 - INFO - ==================================================
+2026-03-03 15:13:34,862 - INFO - SUCCESS: Test_Routine_Task.md moved to Needs_Action/
+2026-03-03 15:13:34,862 - INFO - ==================================================
+2026-03-03 15:13:34,862 - INFO - Updating Dashboard.md...
+2026-03-03 15:13:34,866 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:34,866 - INFO - Total processed: 2 task(s)
+2026-03-03 15:13:34,866 - INFO - Updating Dashboard.md...
+2026-03-03 15:13:34,869 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:34,869 - INFO - Processing complete.
+2026-03-03 15:13:53,596 - INFO - ============================================================
+2026-03-03 15:13:53,597 - INFO - AI Employee Task Processor
+2026-03-03 15:13:53,597 - INFO - ============================================================
+2026-03-03 15:13:53,597 - INFO - Checking Inbox folder...
+2026-03-03 15:13:53,598 - INFO - --------------------------------------------------
+2026-03-03 15:13:53,598 - INFO - Processing task: Test_Routine_Auto.md
+2026-03-03 15:13:53,598 - INFO - Source folder: Inbox
+2026-03-03 15:13:53,598 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\Test_Routine_Auto.md
+2026-03-03 15:13:53,626 - INFO - Parsed task: Routine Data Processing Task
+2026-03-03 15:13:53,627 - INFO - Plan created: Plan_20260303_151353_Test_Routine_Auto.md
+2026-03-03 15:13:53,627 - INFO - Task processed successfully: Routine Data Processing Task
+2026-03-03 15:13:53,628 - INFO - Keyword 'manual' detected - task requires human review
+2026-03-03 15:13:53,628 - INFO - Task requires human review: Test_Routine_Auto.md
+2026-03-03 15:13:53,629 - INFO - Moved to Needs_Action successfully: NeedsAction_20260303_151353_Test_Routine_Auto.md
+2026-03-03 15:13:53,630 - INFO - Plan kept in Plans folder for reference: Plan_20260303_151353_Test_Routine_Auto.md
+2026-03-03 15:13:53,631 - INFO - ==================================================
+2026-03-03 15:13:53,631 - INFO - SUCCESS: Test_Routine_Auto.md moved to Needs_Action/
+2026-03-03 15:13:53,632 - INFO - ==================================================
+2026-03-03 15:13:53,632 - INFO - Updating Dashboard.md...
+2026-03-03 15:13:53,636 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:53,636 - INFO - Total processed: 1 task(s)
+2026-03-03 15:13:53,636 - INFO - Updating Dashboard.md...
+2026-03-03 15:13:53,639 - INFO - Dashboard.md updated successfully
+2026-03-03 15:13:53,639 - INFO - Processing complete.
+2026-03-03 15:14:20,061 - INFO - ============================================================
+2026-03-03 15:14:20,061 - INFO - AI Employee Task Processor
+2026-03-03 15:14:20,061 - INFO - ============================================================
+2026-03-03 15:14:20,062 - INFO - Checking Inbox folder...
+2026-03-03 15:14:20,062 - INFO - --------------------------------------------------
+2026-03-03 15:14:20,062 - INFO - Processing task: Test_Clean_Routine.md
+2026-03-03 15:14:20,062 - INFO - Source folder: Inbox
+2026-03-03 15:14:20,062 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\Test_Clean_Routine.md
+2026-03-03 15:14:20,080 - INFO - Parsed task: Automated Backup Task
+2026-03-03 15:14:20,081 - INFO - Plan created: Plan_20260303_151420_Test_Clean_Routine.md
+2026-03-03 15:14:20,082 - INFO - Task processed successfully: Automated Backup Task
+2026-03-03 15:14:20,082 - INFO - Keyword 'verify' detected - task requires human review
+2026-03-03 15:14:20,082 - INFO - Task requires human review: Test_Clean_Routine.md
+2026-03-03 15:14:20,083 - INFO - Moved to Needs_Action successfully: NeedsAction_20260303_151420_Test_Clean_Routine.md
+2026-03-03 15:14:20,084 - INFO - Plan kept in Plans folder for reference: Plan_20260303_151420_Test_Clean_Routine.md
+2026-03-03 15:14:20,085 - INFO - ==================================================
+2026-03-03 15:14:20,085 - INFO - SUCCESS: Test_Clean_Routine.md moved to Needs_Action/
+2026-03-03 15:14:20,085 - INFO - ==================================================
+2026-03-03 15:14:20,085 - INFO - Updating Dashboard.md...
+2026-03-03 15:14:20,089 - INFO - Dashboard.md updated successfully
+2026-03-03 15:14:20,089 - INFO - Total processed: 1 task(s)
+2026-03-03 15:14:20,089 - INFO - Updating Dashboard.md...
+2026-03-03 15:14:20,092 - INFO - Dashboard.md updated successfully
+2026-03-03 15:14:20,092 - INFO - Processing complete.
+2026-03-03 15:14:46,981 - INFO - ============================================================
+2026-03-03 15:14:46,982 - INFO - AI Employee Task Processor
+2026-03-03 15:14:46,982 - INFO - ============================================================
+2026-03-03 15:14:46,982 - INFO - Checking Inbox folder...
+2026-03-03 15:14:46,983 - INFO - --------------------------------------------------
+2026-03-03 15:14:46,983 - INFO - Processing task: Test_Simple_Routine.md
+2026-03-03 15:14:46,983 - INFO - Source folder: Inbox
+2026-03-03 15:14:46,983 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\Test_Simple_Routine.md
+2026-03-03 15:14:47,008 - INFO - Parsed task: Daily Log Cleanup
+2026-03-03 15:14:47,009 - INFO - Plan created: Plan_20260303_151447_Test_Simple_Routine.md
+2026-03-03 15:14:47,009 - INFO - Task processed successfully: Daily Log Cleanup
+2026-03-03 15:14:47,010 - INFO - Task is routine, completing: Test_Simple_Routine.md
+2026-03-03 15:14:47,012 - INFO - Task moved to Done: Done_20260303_151447_Test_Simple_Routine.md
+2026-03-03 15:14:47,013 - INFO - Plan moved to Done: Done_20260303_151447_Plan_20260303_151447_Test_Simple_Routine.md
+2026-03-03 15:14:47,015 - INFO - ==================================================
+2026-03-03 15:14:47,015 - INFO - SUCCESS: Test_Simple_Routine.md processed and moved to Done/
+2026-03-03 15:14:47,015 - INFO - ==================================================
+2026-03-03 15:14:47,015 - INFO - Updating Dashboard.md...
+2026-03-03 15:14:47,021 - INFO - Dashboard.md updated successfully
+2026-03-03 15:14:47,021 - INFO - Total processed: 1 task(s)
+2026-03-03 15:14:47,022 - INFO - Updating Dashboard.md...
+2026-03-03 15:14:47,025 - INFO - Dashboard.md updated successfully
+2026-03-03 15:14:47,026 - INFO - Processing complete.
+2026-03-03 15:20:01,933 - INFO - ============================================================
+2026-03-03 15:20:01,934 - INFO - AI Employee Task Processor
+2026-03-03 15:20:01,934 - INFO - ============================================================
+2026-03-03 15:20:01,934 - INFO - --------------------------------------------------
+2026-03-03 15:20:01,935 - INFO - Processing task: tasti.md
+2026-03-03 15:20:01,935 - INFO - Source folder: Inbox
+2026-03-03 15:20:01,935 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:01,950 - INFO - Parsed task: tasti
+2026-03-03 15:20:01,951 - INFO - Plan created: Plan_20260303_152001_tasti.md
+2026-03-03 15:20:01,952 - INFO - Task processed successfully: tasti
+2026-03-03 15:20:01,952 - INFO - Keyword 'approval' detected - task requires human review
+2026-03-03 15:20:01,952 - INFO - Task requires human review: tasti.md
+2026-03-03 15:20:01,953 - INFO - Moved to Needs_Action successfully: NeedsAction_20260303_152001_tasti.md
+2026-03-03 15:20:01,953 - INFO - Plan kept in Plans folder for reference: Plan_20260303_152001_tasti.md
+2026-03-03 15:20:01,955 - INFO - ==================================================
+2026-03-03 15:20:01,955 - INFO - SUCCESS: tasti.md moved to Needs_Action/
+2026-03-03 15:20:01,955 - INFO - ==================================================
+2026-03-03 15:20:01,955 - INFO - Updating Dashboard.md...
+2026-03-03 15:20:01,981 - INFO - Dashboard.md updated successfully
+2026-03-03 15:20:25,377 - INFO - ============================================================
+2026-03-03 15:20:25,377 - INFO - AI Employee Task Processor
+2026-03-03 15:20:25,377 - INFO - ============================================================
+2026-03-03 15:20:25,377 - INFO - --------------------------------------------------
+2026-03-03 15:20:25,377 - INFO - Processing task: tasti.md
+2026-03-03 15:20:25,377 - INFO - Source folder: Inbox
+2026-03-03 15:20:25,378 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:25,389 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:20:25,389 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:20:33,207 - INFO - ============================================================
+2026-03-03 15:20:33,208 - INFO - AI Employee Task Processor
+2026-03-03 15:20:33,208 - INFO - ============================================================
+2026-03-03 15:20:33,208 - INFO - --------------------------------------------------
+2026-03-03 15:20:33,209 - INFO - Processing task: tasti.md
+2026-03-03 15:20:33,209 - INFO - Source folder: Inbox
+2026-03-03 15:20:33,209 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:33,209 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:20:33,210 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:20:33,461 - INFO - ============================================================
+2026-03-03 15:20:33,461 - INFO - AI Employee Task Processor
+2026-03-03 15:20:33,462 - INFO - ============================================================
+2026-03-03 15:20:33,462 - INFO - --------------------------------------------------
+2026-03-03 15:20:33,462 - INFO - Processing task: tasti.md
+2026-03-03 15:20:33,462 - INFO - Source folder: Inbox
+2026-03-03 15:20:33,462 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:33,462 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:20:33,462 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:20:34,700 - INFO - ============================================================
+2026-03-03 15:20:34,700 - INFO - AI Employee Task Processor
+2026-03-03 15:20:34,700 - INFO - ============================================================
+2026-03-03 15:20:34,701 - INFO - --------------------------------------------------
+2026-03-03 15:20:34,701 - INFO - Processing task: tasti.md
+2026-03-03 15:20:34,701 - INFO - Source folder: Inbox
+2026-03-03 15:20:34,701 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:34,701 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:20:34,701 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:20:34,829 - INFO - ============================================================
+2026-03-03 15:20:34,830 - INFO - AI Employee Task Processor
+2026-03-03 15:20:34,830 - INFO - ============================================================
+2026-03-03 15:20:34,830 - INFO - --------------------------------------------------
+2026-03-03 15:20:34,830 - INFO - Processing task: tasti.md
+2026-03-03 15:20:34,830 - INFO - Source folder: Inbox
+2026-03-03 15:20:34,830 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:20:34,830 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:20:34,831 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:21:59,425 - INFO - ============================================================
+2026-03-03 15:21:59,426 - INFO - AI Employee Task Processor
+2026-03-03 15:21:59,426 - INFO - ============================================================
+2026-03-03 15:21:59,426 - INFO - Checking Inbox folder...
+2026-03-03 15:21:59,427 - INFO - --------------------------------------------------
+2026-03-03 15:21:59,427 - INFO - Processing task: tasti.md
+2026-03-03 15:21:59,427 - INFO - Source folder: Inbox
+2026-03-03 15:21:59,428 - INFO - Absolute path: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox\tasti.md
+2026-03-03 15:21:59,428 - INFO - SKIP: File already processed: tasti.md
+2026-03-03 15:21:59,429 - INFO - To reprocess, remove the filename from Logs/processed_files.log
+2026-03-03 15:21:59,429 - INFO - Total processed: 1 task(s)
+2026-03-03 15:21:59,429 - INFO - Updating Dashboard.md...
+2026-03-03 15:21:59,448 - INFO - Dashboard.md updated successfully
+2026-03-03 15:21:59,448 - INFO - Processing complete.

@@ -1,18 +1,18 @@
 ---
-created: 2026-03-03T10:26:26.723360
-source_task: test.md
-priority: medium
+created: 2026-03-03T15:07:22.206188
+source_task: test_approval.md
+priority: high
 deadline: None
 status: in_progress
 ---
 
-# Plan: test
+# Plan: Budget Approval Required
 
 ## Source Task
-- **File**: test.md
-- **Priority**: medium
+- **File**: test_approval.md
+- **Priority**: high
 - **Deadline**: None
-- **Created**: 2026-03-03T10:26:26.722529
+- **Created**: 2026-03-03T15:07:22.151918
 
 ## Action Plan
 
@@ -32,11 +32,25 @@ status: in_progress
 
 ## Original Task Content
 
+---
+created: 2026-03-03
+priority: high
+status: pending
+---
+
+# Budget Approval Required
+
+## Description
+This requires human approval for the budget.
+
+## Requirements
+- [ ] Review the budget
+- [ ] Get approval from manager
 
 
 ## Processing Log
 
-- **Plan Created**: 2026-03-03T10:26:26.723379
+- **Plan Created**: 2026-03-03T15:07:22.206209
 - **Processor**: process_needs_action.py
 
 ---

@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 """
-process_needs_action.py - Processes task files from /Needs_Action folder.
+process_needs_action.py - Processes task files from /Needs_Action and /Inbox folders.
 
 Responsibilities:
 1. Reads new task files
 2. Creates a plan in /Plans folder
-3. Moves completed tasks to /Done folder
-4. Updates Dashboard.md automatically
+3. Routes tasks requiring human review to /Needs_Action folder
+4. Moves completed routine tasks to /Done folder
+5. Updates Dashboard.md automatically
+
+Task Routing Logic:
+- Tasks containing keywords (approval, human, review, manual, verify, check, 
+  confirm, authorize, sign, permission) are moved to Needs_Action
+- High priority tasks are moved to Needs_Action for review
+- Routine tasks are automatically completed and moved to Done
 
 Compatible with Windows and WSL (Windows Subsystem for Linux).
 
@@ -15,6 +22,7 @@ FIXES APPLIED:
 - File lock/permission error handling with retry logic
 - Better error messages and logging
 - Safe file operations with existence checks
+- Smart routing based on task content
 """
 
 import os
@@ -52,6 +60,20 @@ LOG_FILE = LOGS_FOLDER / f"processor_{datetime.now().strftime('%Y-%m-%d')}.log"
 
 # Track processed files to avoid duplicates (stored in log for persistence)
 PROCESSED_FILES_LOG = LOGS_FOLDER / "processed_files.log"
+
+# Keywords that indicate a task needs human review
+NEEDS_ACTION_KEYWORDS = [
+    'approval',
+    'human',
+    'review',
+    'manual',
+    'verify',
+    'check',
+    'confirm',
+    'authorize',
+    'sign',
+    'permission'
+]
 
 # =============================================================================
 # LOGGING SETUP
@@ -609,65 +631,179 @@ def update_dashboard_section(content: str, section_header: str, new_content: str
     return new_content_result
 
 # =============================================================================
+# NEEDS ACTION DETECTION
+# =============================================================================
+
+def needs_human_review(task_data: Dict[str, Any]) -> bool:
+    """
+    Check if a task requires human review based on keywords and metadata.
+    
+    Args:
+        task_data: Dictionary containing parsed task information
+    
+    Returns:
+        True if task needs human review, False otherwise
+    """
+    # Check content for keywords (case-insensitive)
+    content_lower = task_data.get('content', '').lower()
+    title_lower = task_data.get('title', '').lower()
+    
+    for keyword in NEEDS_ACTION_KEYWORDS:
+        if keyword in content_lower or keyword in title_lower:
+            logger.info(f"Keyword '{keyword}' detected - task requires human review")
+            return True
+    
+    # Check priority - high priority tasks may need review
+    if task_data.get('priority', '').lower() == 'high':
+        logger.info("High priority task - may require human review")
+        return True
+    
+    return False
+
+def move_to_needs_action(task_path: Path, plan_path: Optional[Path] = None) -> bool:
+    """
+    Move a task to the Needs_Action folder for human review.
+    
+    Args:
+        task_path: Path to the task file
+        plan_path: Optional path to the associated plan file
+    
+    Returns:
+        True if successful, False otherwise
+    """
+    try:
+        # Check if source file exists before trying to move
+        if not task_path.exists():
+            logger.error(f"Source file does not exist: {task_path}")
+            return False
+        
+        # Generate destination filename with timestamp
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        dest_filename = f"NeedsAction_{timestamp}_{task_path.name}"
+        dest_path = NEEDS_ACTION_FOLDER / dest_filename
+        
+        # Check if destination already exists (avoid overwriting)
+        if dest_path.exists():
+            # Add microseconds to make filename unique
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
+            dest_filename = f"NeedsAction_{timestamp}_{task_path.name}"
+            dest_path = NEEDS_ACTION_FOLDER / dest_filename
+        
+        # Use safe move function with retry logic
+        success = safe_move_file(task_path, dest_path)
+        
+        if not success:
+            logger.error(f"Failed to move task to Needs_Action: {task_path.name}")
+            return False
+        
+        logger.info(f"Moved to Needs_Action successfully: {dest_filename}")
+        
+        # Also move the plan if it exists (keep it in Plans folder for reference)
+        if plan_path and plan_path.exists():
+            logger.info(f"Plan kept in Plans folder for reference: {plan_path.name}")
+        
+        # Log the action
+        log_needs_action(task_path.name, dest_filename)
+        
+        # Mark file as processed to avoid duplicates
+        mark_file_processed(task_path.name)
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"Error moving task to Needs_Action: {str(e)}")
+        return False
+
+def log_needs_action(original_file: str, needs_action_file: str):
+    """
+    Log task moved to Needs_Action to the logs folder.
+    
+    Args:
+        original_file: Original filename
+        needs_action_file: New filename in Needs_Action folder
+    """
+    needs_action_log = LOGS_FOLDER / "needs_action.log"
+    
+    with open(needs_action_log, 'a', encoding='utf-8') as f:
+        f.write(f"{datetime.now().isoformat()} | NEEDS_ACTION | "
+               f"{original_file} -> {needs_action_file}\n")
+
+# =============================================================================
 # MAIN PROCESSING
 # =============================================================================
 
 def process_task(file_path: Path) -> bool:
     """
     Process a single task file.
-    
+    Routes tasks to Needs_Action if they require human review, otherwise to Done.
+
     Args:
-        file_path: Path to the task file
-    
+        file_path: Path to the task file (absolute path required)
+
     Returns:
         True if processing was successful, False otherwise
     """
+    # CRITICAL: Resolve to absolute path to prevent shutil.move() issues
+    file_path = file_path.resolve()
+    
     logger.info("-" * 50)
     logger.info(f"Processing task: {file_path.name}")
-    logger.info(f"Source: {file_path.parent.name}")
-    
+    logger.info(f"Source folder: {file_path.parent.name}")
+    logger.info(f"Absolute path: {file_path}")
+
     # FIX #1: Check if file has already been processed (duplicate prevention)
     if is_file_already_processed(file_path.name):
         logger.info(f"SKIP: File already processed: {file_path.name}")
         logger.info("To reprocess, remove the filename from Logs/processed_files.log")
         return True  # Return True as it was already processed successfully
-    
+
     # FIX #2: Check if file exists before processing
     if not file_path.exists():
         logger.error(f"ERROR: File does not exist: {file_path}")
         return False
-    
+
     # Parse the task file
     task_data = parse_task_file(file_path)
-    
+
     if 'error' in task_data and task_data['error']:
         logger.error(f"Failed to parse task: {task_data['error']}")
         return False
-    
+
     # Create a plan
     plan_path = create_plan(task_data)
-    
+
     if not plan_path:
         logger.error("Failed to create plan")
         return False
-    
+
     logger.info(f"Task processed successfully: {task_data['title']}")
-    
-    # Move to Done folder (for Bronze tier, tasks are considered complete after planning)
-    success = mark_task_completed(file_path, plan_path)
-    
-    if success:
-        # FIX #3: Log success message clearly
-        logger.info("=" * 50)
-        logger.info(f"SUCCESS: {file_path.name} processed and moved to Done/")
-        logger.info("=" * 50)
-        
-        # Update dashboard
-        update_dashboard()
+
+    # ROUTING LOGIC: Check if task needs human review
+    if needs_human_review(task_data):
+        logger.info(f"Task requires human review: {file_path.name}")
+        move_success = move_to_needs_action(file_path, plan_path)
+
+        if move_success:
+            logger.info("=" * 50)
+            logger.info(f"SUCCESS: {file_path.name} moved to Needs_Action/")
+            logger.info("=" * 50)
+            update_dashboard()
+        else:
+            logger.error(f"FAILED: Could not move {file_path.name} to Needs_Action folder")
+        return move_success
     else:
-        logger.error(f"FAILED: Could not move {file_path.name} to Done folder")
-    
-    return success
+        # Task is routine - move to Done
+        logger.info(f"Task is routine, completing: {file_path.name}")
+        move_success = mark_task_completed(file_path, plan_path)
+
+        if move_success:
+            logger.info("=" * 50)
+            logger.info(f"SUCCESS: {file_path.name} processed and moved to Done/")
+            logger.info("=" * 50)
+            update_dashboard()
+        else:
+            logger.error(f"FAILED: Could not move {file_path.name} to Done folder")
+        return move_success
 
 # =============================================================================
 # MAIN ENTRY POINT
@@ -690,17 +826,10 @@ if __name__ == "__main__":
         sys.exit(0 if success else 1)
     
     else:
-        # No file specified - process all files in Needs_Action folder
-        logger.info("No file specified. Processing all files in Needs_Action folder...")
-        
+        # No file specified - process only Inbox files
+        # NOTE: Needs_Action folder is for human review, not auto-processing
         processed_count = 0
-        for file_path in NEEDS_ACTION_FOLDER.glob("*.md"):
-            if process_task(file_path):
-                processed_count += 1
         
-        logger.info(f"Processed {processed_count} task(s)")
-        
-        # Also process Inbox files
         logger.info("Checking Inbox folder...")
         for file_path in INBOX_FOLDER.glob("*.md"):
             if process_task(file_path):

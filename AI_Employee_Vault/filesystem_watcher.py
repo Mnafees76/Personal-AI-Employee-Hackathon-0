@@ -4,7 +4,12 @@ filesystem_watcher.py - Monitors /Needs_Action and /Inbox folders for new files.
 
 When a new file is detected:
 1. Logs the detection in /Logs folder
-2. Triggers process_needs_action.py to handle the task
+2. Triggers process_needs_action.py to handle the task (Inbox only)
+
+Important:
+- Files in Inbox are automatically processed
+- Files in Needs_Action are for human review (not auto-processed)
+- Files moved to Needs_Action by the processor are not re-triggered
 
 Compatible with Windows and WSL (Windows Subsystem for Linux).
 """
@@ -132,16 +137,23 @@ class TaskFileHandler(FileSystemEventHandler):
         """
         Process a detected file by logging and triggering the processor script.
         
+        Note: Only Inbox files trigger automatic processing.
+              Needs_Action files are logged but not auto-processed.
+
         Args:
             file_path: Path to the file to process
         """
         logger.info(f"[{self.folder_name}] New file detected: {file_path.name}")
-        
+
         # Log the detection
         self._log_detection(file_path)
-        
-        # Trigger the processing script
-        self._trigger_processor(file_path)
+
+        # Only trigger processor for Inbox files
+        # Needs_Action files are for human review and should not be auto-processed
+        if self.folder_name == "Inbox":
+            self._trigger_processor(file_path)
+        else:
+            logger.info(f"Skipping auto-processing for Needs_Action file: {file_path.name}")
     
     def _log_detection(self, file_path: Path):
         """

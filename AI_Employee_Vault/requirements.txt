@@ -1,0 +1,5 @@
+# AI Employee Vault - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# File system monitoring
+watchdog>=3.0.0

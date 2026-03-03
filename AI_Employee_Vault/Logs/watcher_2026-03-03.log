@@ -1,0 +1,104 @@
+2026-03-03 09:42:28,214 - INFO - Checking for existing files to process...
+2026-03-03 09:42:28,215 - INFO - ============================================================
+2026-03-03 09:42:28,216 - INFO - Starting AI Employee File System Watcher
+2026-03-03 09:42:28,216 - INFO - ============================================================
+2026-03-03 09:42:28,217 - INFO - Vault Root: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault
+2026-03-03 09:42:28,217 - INFO - Monitoring: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Needs_Action, C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox
+2026-03-03 09:42:28,218 - INFO - Log File: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Logs\watcher_2026-03-03.log
+2026-03-03 09:42:28,219 - INFO - ============================================================
+2026-03-03 09:42:28,223 - INFO - Started watcher: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Needs_Action
+2026-03-03 09:42:28,226 - INFO - Started watcher: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox
+2026-03-03 09:42:28,226 - INFO - All watchers started. Press Ctrl+C to stop.
+2026-03-03 09:46:38,118 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:46:38,121 - INFO - Logged detection: test_file.md
+2026-03-03 09:46:38,121 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:46:38,560 - INFO - Successfully processed: test_file.md
+2026-03-03 09:46:38,567 - INFO - File modified: test_file.md
+2026-03-03 09:46:38,568 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:46:38,570 - INFO - Logged detection: test_file.md
+2026-03-03 09:46:38,570 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:46:38,728 - ERROR - Processor failed for test_file.md: 
+2026-03-03 09:55:31,589 - INFO - File modified: test_file.md
+2026-03-03 09:55:31,590 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:55:31,592 - INFO - Logged detection: test_file.md
+2026-03-03 09:55:31,593 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:55:31,819 - INFO - Successfully processed: test_file.md
+2026-03-03 09:56:48,515 - INFO - File modified: test_file.md
+2026-03-03 09:56:48,519 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:56:48,521 - INFO - Logged detection: test_file.md
+2026-03-03 09:56:48,522 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:56:48,705 - INFO - Successfully processed: test_file.md
+2026-03-03 09:57:25,685 - INFO - File modified: test_file.md
+2026-03-03 09:57:25,685 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:57:25,687 - INFO - Logged detection: test_file.md
+2026-03-03 09:57:25,687 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:57:25,846 - INFO - Successfully processed: test_file.md
+2026-03-03 09:57:50,481 - INFO - File modified: test_file.md
+2026-03-03 09:57:50,482 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:57:50,483 - INFO - Logged detection: test_file.md
+2026-03-03 09:57:50,484 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:57:50,675 - INFO - Successfully processed: test_file.md
+2026-03-03 09:57:50,675 - INFO - File modified: test_file.md
+2026-03-03 09:57:50,676 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:57:50,678 - INFO - Logged detection: test_file.md
+2026-03-03 09:57:50,678 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:57:50,843 - ERROR - Processor failed for test_file.md: 
+2026-03-03 09:59:39,451 - INFO - File modified: test_file.md
+2026-03-03 09:59:39,452 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 09:59:39,453 - INFO - Logged detection: test_file.md
+2026-03-03 09:59:39,454 - INFO - Triggering processor for: test_file.md
+2026-03-03 09:59:39,663 - INFO - Successfully processed: test_file.md
+2026-03-03 10:00:48,778 - INFO - File modified: test_file.md
+2026-03-03 10:00:48,778 - INFO - [Inbox] New file detected: test_file.md
+2026-03-03 10:00:48,780 - INFO - Logged detection: test_file.md
+2026-03-03 10:00:48,780 - INFO - Triggering processor for: test_file.md
+2026-03-03 10:00:48,977 - INFO - Successfully processed: test_file.md
+2026-03-03 10:08:35,130 - INFO - Checking for existing files to process...
+2026-03-03 10:08:35,131 - INFO - ============================================================
+2026-03-03 10:08:35,132 - INFO - Starting AI Employee File System Watcher
+2026-03-03 10:08:35,132 - INFO - ============================================================
+2026-03-03 10:08:35,133 - INFO - Vault Root: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault
+2026-03-03 10:08:35,133 - INFO - Monitoring: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Needs_Action, C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox
+2026-03-03 10:08:35,134 - INFO - Log File: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Logs\watcher_2026-03-03.log
+2026-03-03 10:08:35,135 - INFO - ============================================================
+2026-03-03 10:08:35,137 - INFO - Started watcher: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Needs_Action
+2026-03-03 10:08:35,139 - INFO - Started watcher: C:\Users\ADMIN\Documents\GitHub\Personal AI Employee Hackathon 0\AI_Employee_Vault\Inbox
+2026-03-03 10:08:35,139 - INFO - All watchers started. Press Ctrl+C to stop.
+2026-03-03 10:08:49,111 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:08:49,113 - INFO - Logged detection: conten.md
+2026-03-03 10:08:49,114 - INFO - Triggering processor for: conten.md
+2026-03-03 10:08:49,358 - INFO - Successfully processed: conten.md
+2026-03-03 10:11:44,914 - INFO - File modified: conten.md
+2026-03-03 10:11:44,918 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:11:44,922 - INFO - Logged detection: conten.md
+2026-03-03 10:11:44,923 - INFO - Triggering processor for: conten.md
+2026-03-03 10:11:45,156 - INFO - Successfully processed: conten.md
+2026-03-03 10:11:45,157 - INFO - File modified: conten.md
+2026-03-03 10:11:45,157 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:11:45,158 - INFO - Logged detection: conten.md
+2026-03-03 10:11:45,158 - INFO - Triggering processor for: conten.md
+2026-03-03 10:11:45,275 - INFO - Successfully processed: conten.md
+2026-03-03 10:11:46,424 - INFO - File modified: conten.md
+2026-03-03 10:11:46,426 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:11:46,431 - INFO - Logged detection: conten.md
+2026-03-03 10:11:46,433 - INFO - Triggering processor for: conten.md
+2026-03-03 10:11:46,684 - INFO - Successfully processed: conten.md
+2026-03-03 10:11:46,685 - INFO - File modified: conten.md
+2026-03-03 10:11:46,685 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:11:46,686 - INFO - Logged detection: conten.md
+2026-03-03 10:11:46,686 - INFO - Triggering processor for: conten.md
+2026-03-03 10:11:46,807 - INFO - Successfully processed: conten.md
+2026-03-03 10:15:57,186 - INFO - File modified: conten.md
+2026-03-03 10:15:57,188 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:15:57,192 - INFO - Logged detection: conten.md
+2026-03-03 10:15:57,194 - INFO - Triggering processor for: conten.md
+2026-03-03 10:15:57,414 - INFO - Successfully processed: conten.md
+2026-03-03 10:15:57,415 - INFO - File modified: conten.md
+2026-03-03 10:15:57,415 - INFO - [Inbox] New file detected: conten.md
+2026-03-03 10:15:57,417 - INFO - Logged detection: conten.md
+2026-03-03 10:15:57,417 - INFO - Triggering processor for: conten.md
+2026-03-03 10:15:57,578 - INFO - Successfully processed: conten.md
+2026-03-03 10:26:26,340 - INFO - [Inbox] New file detected: test.md
+2026-03-03 10:26:26,341 - INFO - Logged detection: test.md
+2026-03-03 10:26:26,342 - INFO - Triggering processor for: test.md
+2026-03-03 10:26:26,770 - INFO - Successfully processed: test.md
